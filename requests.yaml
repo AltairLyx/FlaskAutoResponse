@@ -1,0 +1,20 @@
+server:
+  error_rate:
+    100
+
+requests:
+  /hello:
+    GET:
+      - req_headers:
+          Host:
+            localhost
+        req_body:
+          str:
+            hello
+        res_headers:
+          Host:
+            testserver
+        res_body:
+          str:
+            hello world from test server
+
